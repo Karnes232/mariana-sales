@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-image {
+  top: 3.5rem;
+  left: 0;
+  height: calc(100% - 56px);
+  width: 100%;
+  z-index: -4;
+  opacity: 0.8;
+  overflow: hidden;
+  background-image: url("../images/background.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-image__content {
+  top: 3.5rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bg-image__button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

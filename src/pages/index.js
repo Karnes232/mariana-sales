@@ -1,0 +1,29 @@
+import * as React from "react"
+import Layout from "../components/layout"
+import { Link } from "gatsby"
+
+const IndexPage = () => {
+  return (
+    <Layout>
+      <div class="bg-image w-screen max-w-lg ">
+        <Link to="/diving">
+          <button className="bg-image__button top-[calc(50%-120px)] inline-block rounded-md text-center w-48 font-bold text-lg py-4 px-4 mb-20 text-white bg-sky-500 opacity-75 hover:opacity-100 hover:bg-blue-600">
+            Scuba Diving
+          </button>
+        </Link>
+        <Link to="/short">
+          <button className="bg-image__button top-[50%] inline-block rounded-md text-center w-48 font-bold text-lg py-4 px-4 mb-20 text-white bg-sky-500 opacity-75 hover:opacity-100 hover:bg-blue-600">
+            Short Excursions
+          </button>
+        </Link>
+        <Link to="/longer">
+          <button className="bg-image__button top-[calc(50%+120px)] inline-block rounded-md text-center w-48 font-bold text-lg py-4 px-4 mb-20 text-white bg-sky-500 opacity-75 hover:opacity-100 hover:bg-blue-600">
+            Over 1 Hour
+          </button>
+        </Link>
+      </div>
+    </Layout>
+  )
+}
+
+export default IndexPage
