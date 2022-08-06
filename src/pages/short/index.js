@@ -7,6 +7,7 @@ import mableCardImage from "../../images/shortTours/mable.webp"
 import bananaCardImage from "../../images/shortTours/banana.webp"
 import wakeboardCardImage from "../../images/shortTours/wakeboard3.webp"
 import parasailingCardImage from "../../images/shortTours/parasailing2.webp"
+import snorkelCardImage from '../../images/shortTours/snorkel7.webp'
 
 const index = () => {
   const opts = {
@@ -19,7 +20,7 @@ const index = () => {
         <div className="relative w-screen max-w-lg h-56">
           <YouTube videoId="zqUQn0QTCGE" opts={opts} className="h-full" />
         </div>
-        <div className="flex flex-col items-center justify-center mt-5">
+        <div className="flex flex-col items-center justify-center my-5">
           <Link to="/short/towable" className="no-underline w-11/12">
             <ExcursionCard
               img={mableCardImage}
@@ -50,6 +51,14 @@ const index = () => {
               course={"Parasailing"}
               price={"70"}
               description={"Parasailing!!!"}
+            />
+          </Link>
+          <Link to="/short/snorkel" className="no-underline w-11/12">
+            <ExcursionCard
+              img={snorkelCardImage}
+              course={"Snorkeling"}
+              price={"40"}
+              description={"Snorkeling!!!"}
             />
           </Link>
         </div>

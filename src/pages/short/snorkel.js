@@ -4,36 +4,44 @@ import Layout from "../../components/layout"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
 
-import parasailingPhoto from "../../images/shortTours/parasailing.webp"
-import parasailingPhoto2 from "../../images/shortTours/parasailing2.webp"
-import parasailingPhoto3 from "../../images/shortTours/parasailing3.webp"
-import parasailingPhoto4 from "../../images/shortTours/parasailing4.webp"
-import parasailingPhoto5 from "../../images/shortTours/parasailing5.webp"
+import snorkelPhoto from "../../images/shortTours/snorkel.webp"
+import snorkelPhoto2 from "../../images/shortTours/snorkel2.webp"
+import snorkelPhoto3 from "../../images/shortTours/snorkel3.webp"
+import snorkelPhoto4 from "../../images/shortTours/snorkel4.webp"
+import snorkelPhoto5 from "../../images/shortTours/snorkel5.webp"
+import snorkelPhoto6 from "../../images/shortTours/snorkel6.webp"
+import snorkelPhoto7 from "../../images/shortTours/snorkel7.webp"
 
 import { FaWhatsapp } from "react-icons/fa"
-const parasailing = () => {
+const snorkel = () => {
   return (
     <Layout>
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
         <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}>
           <div className="h-60">
-            <img src={parasailingPhoto2} alt="Parasailing" />
+            <img src={snorkelPhoto6} alt="snorkeling" />
           </div>
           <div className="h-60">
-            <img src={parasailingPhoto} alt="Parasailing" />
+            <img src={snorkelPhoto4} alt="snorkeling" />
           </div>
           <div className="h-60">
-            <img src={parasailingPhoto4} alt="Parasailing" />
+            <img src={snorkelPhoto2} alt="snorkeling" />
           </div>
           <div className="h-60">
-            <img src={parasailingPhoto5} alt="Parasailing" />
+            <img src={snorkelPhoto} alt="snorkeling" />
           </div>
           <div className="h-60">
-            <img src={parasailingPhoto3} alt="Parasailing" />
+            <img src={snorkelPhoto7} alt="snorkeling" />
+          </div>
+          <div className="h-60">
+            <img src={snorkelPhoto3} alt="snorkeling" />
+          </div>
+          <div className="h-60">
+            <img src={snorkelPhoto5} alt="snorkeling" />
           </div>
         </Carousel>
         <div className="flex flex-col items-center justify-center mt-5 space-y-2 mx-4">
-          <h1 className="text-2xl font-semibold">Parasailing</h1>
+          <h1 className="text-2xl font-semibold">Snorkeling</h1>
           <p className="text-sm text-gray-800 text-center">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
             ullam fugit rerum debitis amet illo sit explicabo? Corporis porro
@@ -51,10 +59,8 @@ const parasailing = () => {
         </div>
         <div className="flex flex-col items-center justify-center mt-5 space-y-1 mx-4">
           <h1 className="text-xl font-semibold">Trip Overview</h1>
-          <h4 className="text-sm text-gray-500">Price: $70 Single Flight</h4>
-          <h4 className="text-sm text-gray-500">Price: $100 Tandem Flight</h4>
-          <h4 className="text-sm text-gray-500">Price: $130 Triple Flight</h4>
-          <h4 className="text-sm text-gray-500">10 Minute Flight</h4>
+          <h4 className="text-sm text-gray-500">Price: $40 per person</h4>
+          <h4 className="text-sm text-gray-500">1 Hour Tour</h4>
         </div>
         <div className="flex flex-col items-center justify-center mt-5 mx-4 space-y-2">
           <p className="text-sm text-gray-800 text-center">
@@ -101,4 +107,4 @@ const parasailing = () => {
   )
 }
 
-export default parasailing
+export default snorkel

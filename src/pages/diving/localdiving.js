@@ -15,7 +15,7 @@ import { FaWhatsapp } from "react-icons/fa"
 const localdiving = () => {
   return (
     <Layout>
-      <div className="w-screen max-w-lg flex flex-col mt-5 items-center">
+      <div className="w-screen max-w-lg flex flex-col my-5 items-center">
         <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}>
           <div className="h-60">
             <img src={localdiving1} alt="Diving" />

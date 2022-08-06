@@ -1,11 +1,11 @@
 import { Link } from "gatsby"
 import React from "react"
 import Layout from "../../components/layout"
-import localCardImage from "../../images/localCard.webp"
-import catalinaCardImage from "../../images/catalinaCard.webp"
-import dsdCardImage from "../../images/dsdCard.webp"
-import sdCardImage from "../../images/sdCard.webp"
-import owdCardImage from "../../images/owdCard.webp"
+import localCardImage from "../../images/diving/localCard.webp"
+import catalinaCardImage from "../../images/diving/catalinaCard.webp"
+import dsdCardImage from "../../images/diving/dsdCard.webp"
+import sdCardImage from "../../images/diving/sdCard.webp"
+import owdCardImage from "../../images/diving/owdCard.webp"
 import ExcursionCard from "../../components/ExcursionCardComponents/ExcursionCard"
 import YouTube from "react-youtube"
 const index = () => {
@@ -19,7 +19,7 @@ const index = () => {
         <div className="relative w-screen max-w-lg h-56">
           <YouTube videoId="KvZT3etZIsw" opts={opts} className="h-full" />
         </div>
-        <div className="flex flex-col items-center justify-center mt-5">
+        <div className="flex flex-col items-center justify-center my-5">
           <Link to="/diving/discover" className="no-underline w-11/12">
             <ExcursionCard
               img={dsdCardImage}

@@ -27,7 +27,7 @@ const scubadiver = () => {
             instructor.
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center mt-5 space-y-1 mx-4">
+        <div className="flex flex-col items-center justify-center my-5 space-y-1 mx-4">
           <h1 className="text-xl font-semibold">Course Overview</h1>
           <h4 className="text-sm text-gray-500">Course Level: Beginner</h4>
           <h4 className="text-sm text-gray-500">Price: $360 per person</h4>
