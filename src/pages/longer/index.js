@@ -5,7 +5,7 @@ import ExcursionCard from "../../components/ExcursionCardComponents/ExcursionCar
 import YouTube from "react-youtube"
 
 import speedboatCardImage from "../../images/speedboat/speedboat4.webp"
-import scubadooCardImage from '../../images/scubadoo/scubadoo3.webp'
+import scubadooCardImage from "../../images/scubadoo/scubadoo3.webp"
 
 const index = () => {
   const opts = {
@@ -24,7 +24,9 @@ const index = () => {
               img={speedboatCardImage}
               course={"Speedboat"}
               price={"120"}
-              description={"Take the wheel of your own speed boat along the coastline of Bavaro Beach "}
+              description={
+                "Take the wheel of your own speed boat along the coastline of Bavaro Beach "
+              }
             />
           </Link>
           <Link to="/longer/scubadoo" className="no-underline w-11/12">
@@ -32,10 +34,11 @@ const index = () => {
               img={scubadooCardImage}
               course={"ScubaDoo"}
               price={"70"}
-              description={"TDrive an underwater scooter along the seabed of Punta Cana with this incredible Scuba Doo activity"}
+              description={
+                "TDrive an underwater scooter along the seabed of Punta Cana with this incredible Scuba Doo activity"
+              }
             />
           </Link>
-        
         </div>
       </div>
     </Layout>

@@ -3,17 +3,16 @@ import React from "react"
 import Layout from "../../components/layout"
 import ExcursionCard from "../../components/ExcursionCardComponents/ExcursionCard"
 import YouTube from "react-youtube"
-import mableCardImage from "../../images/shortTours/mable.webp"
-import bananaCardImage from "../../images/shortTours/banana.webp"
-import wakeboardCardImage from "../../images/shortTours/wakeboard3.webp"
-import parasailingCardImage from "../../images/shortTours/parasailing2.webp"
-import snorkelCardImage from '../../images/shortTours/snorkel7.webp'
+
+import { shortTours } from "../../data/shortTours"
 
 const index = () => {
   const opts = {
     height: "100%",
     width: "100%",
   }
+
+  console.log(shortTours)
   return (
     <Layout>
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
@@ -21,46 +20,17 @@ const index = () => {
           <YouTube videoId="zqUQn0QTCGE" opts={opts} className="h-full" />
         </div>
         <div className="flex flex-col items-center justify-center my-5">
-          <Link to="/short/towable" className="no-underline w-11/12">
-            <ExcursionCard
-              img={mableCardImage}
-              course={"Great Big Mable"}
-              price={"15"}
-              description={"The Great Big Mable is a classic towable"}
-            />
-          </Link>
-          <Link to="/short/towable" className="no-underline w-11/12">
-            <ExcursionCard
-              img={bananaCardImage}
-              course={"Banana Boat"}
-              price={"15"}
-              description={"The Banana Boat is a classic towable"}
-            />
-          </Link>
-          <Link to="/short/wake" className="no-underline w-11/12">
-            <ExcursionCard
-              img={wakeboardCardImage}
-              course={"Water Ski / Wakeboard"}
-              price={"35"}
-              description={"The Water Ski is a classic towable"}
-            />
-          </Link>
-          <Link to="/short/parasailing" className="no-underline w-11/12">
-            <ExcursionCard
-              img={parasailingCardImage}
-              course={"Parasailing"}
-              price={"70"}
-              description={"Parasailing!!!"}
-            />
-          </Link>
-          <Link to="/short/snorkel" className="no-underline w-11/12">
-            <ExcursionCard
-              img={snorkelCardImage}
-              course={"Snorkeling"}
-              price={"40"}
-              description={"Snorkeling!!!"}
-            />
-          </Link>
+          {shortTours.map((tour, index) => (
+            <Link to={tour.link} className="no-underline w-11/12" key={index}>
+              <ExcursionCard
+                img={tour.mainImg}
+                course={tour.name}
+                price={tour.price}
+                description={tour.description}
+              />
+            </Link>
+          ))}
+
         </div>
       </div>
     </Layout>

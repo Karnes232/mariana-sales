@@ -4,10 +4,10 @@ import Layout from "../../components/layout"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
 
-import speedboatPhoto from '../../images/speedboat/speedboat.webp'
-import speedboatPhoto2 from '../../images/speedboat/speedboat2.webp'
-import speedboatPhoto3 from '../../images/speedboat/speedboat3.webp'
-import speedboatPhoto4 from '../../images/speedboat/speedboat4.webp'
+import speedboatPhoto from "../../images/speedboat/speedboat.webp"
+import speedboatPhoto2 from "../../images/speedboat/speedboat2.webp"
+import speedboatPhoto3 from "../../images/speedboat/speedboat3.webp"
+import speedboatPhoto4 from "../../images/speedboat/speedboat4.webp"
 
 import { FaWhatsapp } from "react-icons/fa"
 const speedboat = () => {
@@ -47,7 +47,9 @@ const speedboat = () => {
         </div>
         <div className="flex flex-col items-center justify-center mt-5 space-y-1 mx-4">
           <h1 className="text-xl font-semibold">Trip Overview</h1>
-          <h4 className="text-sm text-gray-500">Price: $120 per 2 person boat</h4>
+          <h4 className="text-sm text-gray-500">
+            Price: $120 per 2 person boat
+          </h4>
           <h4 className="text-sm text-gray-500">1.5 Hours Tour</h4>
         </div>
         <div className="flex flex-col items-center justify-center mt-5 mx-4 space-y-2">

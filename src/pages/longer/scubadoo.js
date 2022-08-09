@@ -4,9 +4,9 @@ import Layout from "../../components/layout"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
 
-import scubadooPhoto from '../../images/scubadoo/scubadoo.webp'
-import scubadooPhoto2 from '../../images/scubadoo/scubadoo2.webp'
-import scubadooPhoto3 from '../../images/scubadoo/scubadoo3.webp'
+import scubadooPhoto from "../../images/scubadoo/scubadoo.webp"
+import scubadooPhoto2 from "../../images/scubadoo/scubadoo2.webp"
+import scubadooPhoto3 from "../../images/scubadoo/scubadoo3.webp"
 
 import { FaWhatsapp } from "react-icons/fa"
 const speedboat = () => {
@@ -23,7 +23,6 @@ const speedboat = () => {
           <div className="h-60">
             <img src={scubadooPhoto} alt="ScubaDoo" />
           </div>
-          
         </Carousel>
         <div className="flex flex-col items-center justify-center mt-5 space-y-2 mx-4">
           <h1 className="text-2xl font-semibold">ScubaDoo</h1>

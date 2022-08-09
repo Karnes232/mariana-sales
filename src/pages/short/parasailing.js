@@ -4,85 +4,37 @@ import Layout from "../../components/layout"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
 
-import parasailingPhoto from "../../images/shortTours/parasailing.webp"
-import parasailingPhoto2 from "../../images/shortTours/parasailing2.webp"
-import parasailingPhoto3 from "../../images/shortTours/parasailing3.webp"
-import parasailingPhoto4 from "../../images/shortTours/parasailing4.webp"
-import parasailingPhoto5 from "../../images/shortTours/parasailing5.webp"
-
 import { FaWhatsapp } from "react-icons/fa"
+
+import { shortTours } from "../../data/shortTours"
 const parasailing = () => {
+  const tour = shortTours.find(tour => tour.pageName === "Parasailing")
   return (
     <Layout>
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
         <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}>
-          <div className="h-60">
-            <img src={parasailingPhoto2} alt="Parasailing" />
-          </div>
-          <div className="h-60">
-            <img src={parasailingPhoto} alt="Parasailing" />
-          </div>
-          <div className="h-60">
-            <img src={parasailingPhoto4} alt="Parasailing" />
-          </div>
-          <div className="h-60">
-            <img src={parasailingPhoto5} alt="Parasailing" />
-          </div>
-          <div className="h-60">
-            <img src={parasailingPhoto3} alt="Parasailing" />
-          </div>
+          {tour.gallery.map((image, index) => (
+            <div className="h-60" key={index}>
+              <img src={image} alt="Parasailing" />
+            </div>
+          ))}
         </Carousel>
         <div className="flex flex-col items-center justify-center mt-5 space-y-2 mx-4">
-          <h1 className="text-2xl font-semibold">Parasailing</h1>
+          <h1 className="text-2xl font-semibold">{tour.pageName}</h1>
           <p className="text-sm text-gray-800 text-center">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-            ullam fugit rerum debitis amet illo sit explicabo? Corporis porro
-            excepturi quisquam blanditiis, assumenda harum asperiores ratione.
-            Sapiente hic corporis expedita nobis, dolorum debitis reiciendis,
-            recusandae unde ea fugit libero, necessitatibus labore. Similique
-            ipsum quo cum quam ipsam fuga. Esse sapiente fugiat deleniti quis
-            culpa illum aliquid, dolores iste rerum! Ipsa laudantium labore
-            impedit! Rem repudiandae, nisi voluptas laborum consequuntur eum
-            consectetur perspiciatis sed, maxime, voluptatibus iusto iste
-            dolores officia! Quod ea dolorem perspiciatis, voluptate fugiat ipsa
-            cumque temporibus, facere harum ipsam aliquid voluptatem eligendi
-            dolorum laborum soluta accusantium consequuntur. Eos.
+            {tour.descriptionMain}
           </p>
         </div>
         <div className="flex flex-col items-center justify-center mt-5 space-y-1 mx-4">
           <h1 className="text-xl font-semibold">Trip Overview</h1>
-          <h4 className="text-sm text-gray-500">Price: $70 Single Flight</h4>
-          <h4 className="text-sm text-gray-500">Price: $100 Tandem Flight</h4>
-          <h4 className="text-sm text-gray-500">Price: $130 Triple Flight</h4>
-          <h4 className="text-sm text-gray-500">10 Minute Flight</h4>
+          <h4 className="text-sm text-gray-500">Price: ${tour.price}</h4>
+          <h4 className="text-sm text-gray-500">Price: ${tour.price2}</h4>
+          <h4 className="text-sm text-gray-500">Price: ${tour.price3}</h4>
+          <h4 className="text-sm text-gray-500">{tour.overview}</h4>
         </div>
         <div className="flex flex-col items-center justify-center mt-5 mx-4 space-y-2">
           <p className="text-sm text-gray-800 text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            nostrum iure saepe consequatur nihil excepturi quo molestias nemo a
-            in, fugiat natus minima, esse tempora! Ab at sequi eligendi id saepe
-            velit eius quas quae quia ex, tempora veritatis architecto rerum
-            nihil repudiandae ratione magnam a expedita, eaque, inventore ipsa
-            eos! Cum dolor nam totam laborum pariatur placeat nesciunt veniam ex
-            neque natus iure harum id suscipit nihil sed qui quibusdam, numquam
-            a in veritatis fugit perferendis atque corrupti ipsum. Culpa
-            quisquam nesciunt dolores beatae quasi doloremque nihil voluptate
-            alias velit iusto. Ea illum, quibusdam quam veritatis assumenda
-            saepe ad.
-          </p>
-          <p className="text-sm text-gray-800 text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. In ducimus
-            temporibus velit vero nobis? Excepturi similique hic, facilis
-            obcaecati dolor aperiam nostrum! Sit vero consectetur impedit cum
-            voluptate, maxime blanditiis iure aliquid praesentium voluptates
-            quod, culpa dolores asperiores, veritatis dolore laborum ullam
-            cupiditate voluptatum corporis quam. Quae repellendus ea animi.
-            Deleniti eum nulla blanditiis, quidem recusandae excepturi natus
-            voluptas aperiam a! Libero dolorum unde commodi voluptatibus sunt
-            dolorem exercitationem, error earum itaque rem officia molestias
-            corporis iusto, laboriosam suscipit totam, nesciunt ratione nam
-            eligendi. Nostrum a minus enim perferendis fugiat suscipit at rem
-            aperiam, nulla, sint, consectetur ad ullam ducimus!
+            {tour.descriptionSecondary}
           </p>
         </div>
         <a
