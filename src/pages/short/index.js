@@ -12,7 +12,6 @@ const index = () => {
     width: "100%",
   }
 
-  console.log(shortTours)
   return (
     <Layout>
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
@@ -30,7 +29,6 @@ const index = () => {
               />
             </Link>
           ))}
-
         </div>
       </div>
     </Layout>

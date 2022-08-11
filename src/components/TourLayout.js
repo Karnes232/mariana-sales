@@ -1,41 +1,41 @@
 import React from "react"
-import Layout from "../../components/layout"
+import Layout from './layout'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
 
-import { shortTours } from "../../data/shortTours"
-
 import { FaWhatsapp } from "react-icons/fa"
-const wake = () => {
-  const tour = shortTours.find(
-    tour => tour.pageName === "Water Ski / Wake Board"
-  )
+const TourLayout = ({tour}) => {
   return (
     <Layout>
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
+      {tour.gallery ? (
         <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}>
           {tour.gallery.map((image, index) => (
             <div className="h-60" key={index}>
-              <img src={image} alt="Wakeboard / Waterski" />
+              <img src={image} alt="Parasailing" />
             </div>
           ))}
         </Carousel>
+        ): (<></>)}
         <div className="flex flex-col items-center justify-center mt-5 space-y-2 mx-4">
-          <h1 className="text-2xl font-semibold">{tour.pageName}</h1>
-          <p className="text-sm text-gray-800 text-center">
+        {tour.pageName ? (
+          <h1 className="text-2xl font-semibold">{tour.pageName}</h1> ): (<></>)}
+          {tour.descriptionMain ? (<p className="text-sm text-gray-800 text-center">
             {tour.descriptionMain}
-          </p>
+          </p>  ): (<></>)}
         </div>
         <div className="flex flex-col items-center justify-center mt-5 space-y-1 mx-4">
           <h1 className="text-xl font-semibold">Trip Overview</h1>
-          <h4 className="text-sm text-gray-500">Price: ${tour.price}</h4>
-          <h4 className="text-sm text-gray-500">{tour.overview}</h4>
+          {tour.price ? (<h4 className="text-sm text-gray-500">Price: ${tour.price}</h4> ): (<></>)}
+          {tour.price2 ? (<h4 className="text-sm text-gray-500">Price: ${tour.price2}</h4> ): (<></>)}
+          {tour.price3 ? (<h4 className="text-sm text-gray-500">Price: ${tour.price3}</h4> ): (<></>)}
+          {tour.overview ? (<h4 className="text-sm text-gray-500">{tour.overview}</h4> ): (<></>)}
         </div>
         <div className="flex flex-col items-center justify-center mt-5 mx-4 space-y-2">
-          <p className="text-sm text-gray-800 text-center">
+        {tour.descriptionSecondary ? (<p className="text-sm text-gray-800 text-center">
             {tour.descriptionSecondary}
-          </p>
+          </p> ): (<></>)}
         </div>
         <a
           href={`https://api.whatsapp.com/send?phone=${process.env.PHONE_NUMBER}`}
@@ -53,4 +53,4 @@ const wake = () => {
   )
 }
 
-export default wake
+export default TourLayout
