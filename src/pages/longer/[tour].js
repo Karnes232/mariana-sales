@@ -1,11 +1,17 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Layout from "../../components/layout"
 import TourLayout from "../../components/TourLayout"
 
 import { longerTours } from "../../data/longerTours"
 
 const tour = () => {
-  const tour = longerTours.find(tour => tour.link === window.location.pathname)
+  const [tour, setTour] = useState({})
+  useEffect(() => {
+    
+    const tour = longerTours.find(tour => tour.link === window.location.pathname)
+    setTour(tour)
+  }, [])
+  
 
   return (
     <>
