@@ -6,6 +6,7 @@ import { Carousel } from "react-responsive-carousel"
 
 import { FaWhatsapp } from "react-icons/fa"
 const TourLayout = ({tour}) => {
+  console.log(process.env.PHONE_NUMBER)
   return (
     <Layout>
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
