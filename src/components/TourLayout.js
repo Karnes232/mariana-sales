@@ -6,7 +6,7 @@ import { Carousel } from "react-responsive-carousel"
 
 import { FaWhatsapp } from "react-icons/fa"
 const TourLayout = ({tour}) => {
-  console.log(process.env.PHONE_NUMBER)
+  const phoneNumber='18296405433'
   return (
     <Layout>
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
@@ -22,7 +22,7 @@ const TourLayout = ({tour}) => {
         }
         <div className="flex flex-col items-center justify-center mt-5 space-y-2 mx-4">
         <a
-          href={`https://api.whatsapp.com/send?phone=${process.env.PHONE_NUMBER}`}
+          href={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
           target="_blank"
           aria-label="Whatsapp"
           rel="noreferrer"
@@ -51,7 +51,7 @@ const TourLayout = ({tour}) => {
           </p> }
         </div>
         <a
-          href={`tel:5554280940${process.env.PHONE_NUMBER}`}
+          href={`tel:${phoneNumber}`}
           target="_blank"
           aria-label="Whatsapp"
           rel="noreferrer"
