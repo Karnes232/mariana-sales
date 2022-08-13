@@ -2,17 +2,17 @@ import React, { useEffect, useState } from "react"
 import Layout from "../../components/layout"
 import TourLayout from "../../components/TourLayout"
 
-import { longerTours } from "../../data/longerTours"
 
-const tour = () => {
+import { shortTours } from "../../data/shortTours"
+const Tour = () => {
+  
   const [tour, setTour] = useState({})
   useEffect(() => {
     
-    const tour = longerTours.find(tour => tour.link === window.location.pathname)
+    const tour = shortTours.find(tour => tour.link === window.location.pathname)
     setTour(tour)
   }, [])
   
-
   return (
     <>
       {tour ? (<TourLayout tour={tour}/>): (<Layout></Layout>)}
@@ -21,4 +21,4 @@ const tour = () => {
   )
 }
 
-export default tour
+export default Tour
