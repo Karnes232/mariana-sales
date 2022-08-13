@@ -11,8 +11,15 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/logo.jpg",
+        name: `Mariana Sales`,
+        short_name: `Mariana`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
       },
     },
+    `gatsby-plugin-offline`,
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -26,6 +33,3 @@ module.exports = {
   ],
 }
 
-require("dotenv").config({
-  path: `.env`,
- })
