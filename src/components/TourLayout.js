@@ -61,6 +61,17 @@ const TourLayout = ({tour}) => {
             <FaWhatsapp className="inline-block h-4 w-5 ml-1" />
           </button>
         </a>
+        <a
+          href={`sms::${phoneNumber}`}
+          target="_blank"
+          aria-label="Whatsapp"
+          rel="noreferrer"
+        >
+          <button className="uppercase text-sm font-bold tracking-wide bg-[#0c16d9] text-gray-100 p-3 rounded-lg w-80 my-6 focus:outline-none focus:shadow-outline">
+            Text Me
+            <FaWhatsapp className="inline-block h-4 w-5 ml-1" />
+          </button>
+        </a>
       </div>
     </Layout>
   )
