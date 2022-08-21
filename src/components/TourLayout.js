@@ -4,11 +4,12 @@ import Layout from "./layout"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
 
-import ButtonCTA from "./ExcursionCardComponents/ButtonCTA"
 import { FaWhatsapp } from "react-icons/fa"
 import { FiPhoneCall } from "react-icons/fi"
 import {BsChatLeftText} from "react-icons/bs"
 
+import ButtonBlueCTA from "./ExcursionCardComponents/ButtonBlueCTA"
+import ButtonGreenCTA from "./ExcursionCardComponents/ButtonGreenCTA"
 const TourLayout = ({ tour }) => {
   const phoneNumber = "18296405433"
   return (
@@ -56,22 +57,20 @@ const TourLayout = ({ tour }) => {
           )}
         </div>
 
-        <ButtonCTA
+        <ButtonBlueCTA
           phoneNumber={`tel:${phoneNumber}`}
           text="Call Me"
-          color="#0c16d9"
           icon={<FiPhoneCall className="inline-block h-4 w-5 ml-1" />}
         />
-        <ButtonCTA
+        <ButtonGreenCTA
           phoneNumber={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
           text="WhatsApp"
-          color="#25D366"
+
           icon={<FaWhatsapp className="inline-block h-4 w-5 ml-1" />}
         />
-        <ButtonCTA
+        <ButtonBlueCTA
           phoneNumber={`sms::${phoneNumber}`}
           text="Text Me"
-          color="#0c16d9"
           icon={<BsChatLeftText className="inline-block h-4 w-5 ml-1" />}
         />
         <div className="my-2"></div>
