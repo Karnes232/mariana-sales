@@ -28,7 +28,6 @@ const index = () => {
               />
             </Link>
           ))}
-
         </div>
       </div>
     </Layout>

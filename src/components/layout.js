@@ -11,7 +11,6 @@ import PropTypes from "prop-types"
 import Header from "./HeaderComponents/Header"
 
 const Layout = ({ children }) => {
-
   return (
     <main className="flex flex-col justify-center items-center bg-slate-200">
       <section className="w-screen max-w-lg bg-white">

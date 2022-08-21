@@ -7,18 +7,13 @@ import { longerTours } from "../../data/longerTours"
 const Tour = () => {
   const [tour, setTour] = useState({})
   useEffect(() => {
-    
-    const tour = longerTours.find(tour => tour.link === window.location.pathname)
+    const tour = longerTours.find(
+      tour => tour.link === window.location.pathname
+    )
     setTour(tour)
   }, [])
-  
 
-  return (
-    <>
-      {tour ? (<TourLayout tour={tour}/>): (<Layout></Layout>)}
-    </>
-    
-  )
+  return <>{tour ? <TourLayout tour={tour} /> : <Layout></Layout>}</>
 }
 
 export default Tour
