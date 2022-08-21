@@ -9,7 +9,7 @@ const ButtonCTA = ({ phoneNumber, text, color, icon }) => {
       rel="noreferrer"
     >
       <button
-        className={`uppercase text-sm font-bold tracking-wide bg-[${color}] text-gray-100 p-3 rounded-lg w-80 mb-3  focus:outline-none focus:shadow-outline`}
+        className={`uppercase text-sm font-bold tracking-wide bg-[${color}] text-gray-100 p-3 rounded-lg w-80 mb-3  focus:outline-none focus:shadow-outline visited:bg-[${color}] hover:bg-[${color}]`}
       >
         {text}
         {icon}
