@@ -7,7 +7,7 @@ import { Carousel } from "react-responsive-carousel"
 import ButtonCTA from "./ExcursionCardComponents/ButtonCTA"
 import { FaWhatsapp } from "react-icons/fa"
 import { FiPhoneCall } from "react-icons/fi"
-import { BsChatLeftText } from "react-icons/bs"
+import {BsChatLeftText} from "react-icons/bs"
 
 const TourLayout = ({ tour }) => {
   const phoneNumber = "18296405433"
