@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "./layout"
-
+import { Link } from "gatsby"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
 
 import { FaWhatsapp } from "react-icons/fa"
 import { FiPhoneCall } from "react-icons/fi"
-import {BsChatLeftText} from "react-icons/bs"
+import { BsChatLeftText } from "react-icons/bs"
 
 import ButtonBlueCTA from "./ExcursionCardComponents/ButtonBlueCTA"
 import ButtonGreenCTA from "./ExcursionCardComponents/ButtonGreenCTA"
@@ -48,6 +48,17 @@ const TourLayout = ({ tour }) => {
           {tour.overview && (
             <h4 className="text-sm text-gray-500">{tour.overview}</h4>
           )}
+          <Link
+            to="/paypal"
+            className="no-underline w-11/12"
+            state={{ price: tour.price }}
+          >
+            <button
+              className={`uppercase text-sm font-bold tracking-wide bg-[#0c16d9] text-gray-100 p-3 rounded-lg w-80 mb-3  focus:outline-none focus:shadow-outline visited:bg-[#0c16d9] hover:bg-[#0c16d9]`}
+            >
+              PayPal
+            </button>
+          </Link>
         </div>
         <div className="flex flex-col items-center justify-center my-5 mx-4 space-y-2">
           {tour.descriptionSecondary && (
@@ -65,7 +76,6 @@ const TourLayout = ({ tour }) => {
         <ButtonGreenCTA
           phoneNumber={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
           text="WhatsApp"
-
           icon={<FaWhatsapp className="inline-block h-4 w-5 ml-1" />}
         />
         <ButtonBlueCTA
