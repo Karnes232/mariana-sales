@@ -88,4 +88,28 @@ export const longerTours = [
     descriptionSecondary:
       "Macao Beach has many surf breaks for different level of surfers. We will always find a spot where you feel comfortable, challenged, and above-all safe! Enjoying your surfing experience and being totally stoked after each session is as important as learning the skills themselves! Surfing in a sport that lifts you up, empowers and motivates you! Your stoke is our goal",
   },
+  {
+    id: 5,
+    name: "Party Boat",
+    pageName: "Party Boat",
+    price: "68 per person",
+    link: "/longer/party",
+    description: "Booze Cruise",
+    mainImg: "https://i.ibb.co/drdKVTc/ezgif-com-gif-maker-2.webp",
+    gallery: [
+      "https://i.ibb.co/XSFjHvd/ezgif-com-gif-maker-1.webp",
+      "https://i.ibb.co/8MQdHL4/ezgif-com-gif-maker-3.webp",
+      "https://i.ibb.co/drdKVTc/ezgif-com-gif-maker-2.webp",
+      "https://i.ibb.co/D5GWg31/ezgif-com-gif-maker.webp",
+      "https://i.ibb.co/jR2Vnkq/ezgif-com-gif-maker-5.webp",
+      "https://i.ibb.co/zbVFFL4/ezgif-com-gif-maker-4.webp",
+      "https://i.ibb.co/PCmhGvS/ezgif-com-gif-maker-7.webp",
+    ],
+    overview: "2 - 3 Hours Tour",
+    descriptionMain:
+      "Whip up fun in the sun on this party ride along Punta Cana’s stunning coastline. Cruise to a coral reef, snorkel among tropical fish, and dance to musical hits over alcoholic drinks on a catamaran. This half-day tour lets you enjoy all of these activities while enjoying the party atmosphere.",
+
+    descriptionSecondary:
+      "Imagine yourself on a magnificent catamaran cruising along the beautiful coastline of Punta Cana, the splendid view of stunning white sand beaches and beautiful tropical vegetation, enjoying a delicious beverage of your choice. Join us today!",
+  },
 ]

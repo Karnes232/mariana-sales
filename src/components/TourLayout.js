@@ -18,7 +18,7 @@ const TourLayout = ({ tour }) => {
         {tour.gallery && (
           <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}>
             {tour.gallery.map((image, index) => (
-              <div className="h-60" key={index}>
+              <div className="h-60 xs:h-72" key={index}>
                 <img src={image} alt={tour.pageName} />
               </div>
             ))}
