@@ -16,9 +16,9 @@ export const longerTours = [
     ],
     overview: "1.5 Hours Tour",
     descriptionMain:
-      "Adventure lovers—this is the one for you. Swap predictable group sightseeing boat tours for something more hands-on and exhilarating—a chance to take full control of a speedboat and ride along the coast of Punta Cana. During the trip, pause at a coral reef to go snorkeling, visit a beautiful natural pool, and enjoy a break for refreshments",
+      "Instead of a guide in the front seat and guests in the back, this trip includes you, giving you complete control over every moment. Stop at a coral reef to snorkel and enjoy some refreshing waters as well as a high-speed ride along the gorgeous coast of Punta Cana.",
     descriptionSecondary:
-      "Get ready for an exhilarating adventure in the ocean near Punta Cana. Instead of going to the hassle of booking all your watersports separately, this convenient tour includes a guided speedboat trip and snorkeling equipment rental too. First, get behind the wheel of your own speedboat and whizz across the coastal waters with a guide to lead the way so you don't get lost. Then, visit a fantastic snorkeling spot that's home to tropical fish and coral reefs.",
+      "You won’t find yourself wasting time on a boat tour—that’s not the point of this trip. Adventure lovers will love the chance to completely control a speedboat, cruise along the coast of Punta Cana and visit amazing natural places that are off the beaten path. At one stop, you’ll even snorkel in an aquarium-like diving spot where you can see critters under the surface. After all, what other opportunity could there be to experience something truly exhilarating?.",
   },
   {
     id: 2,
@@ -28,18 +28,20 @@ export const longerTours = [
     price2: "55 per watcher",
     link: "/longer/fishing",
     description: "Deep Sea Trawling",
-    mainImg: "https://i.ibb.co/jz1vbfH/scubadoo3.jpg",
+    mainImg: "https://i.ibb.co/TTR942d/bigmarlin-fishing-charter.webp",
     gallery: [
-      "https://i.ibb.co/sCgb6rL/scubadoo2.jpg",
-      "https://i.ibb.co/jz1vbfH/scubadoo3.jpg",
-      "https://i.ibb.co/ypZX7Zs/scubadoo.jpg",
+      "https://i.ibb.co/GCpbsmR/gone-dog-trolling-boat.webp",
+      "https://i.ibb.co/TTR942d/bigmarlin-fishing-charter.webp",
+      "https://i.ibb.co/2y7RhTK/fish.webp",
+      "https://i.ibb.co/S0GvfVh/gone-fishing-charter.webp",
+      "https://i.ibb.co/p105t71/fishing8.webp",
     ],
     overview: "4 Hour Tour",
     descriptionMain:
-      "Whether you've never tried fishing before or go every weekend, this four-hour deep sea fishing charter provides fun and relaxation. Travel on a spacious boat with comfortable indoor and outdoor areas. Try your luck at catching blue marlin, Atlantic sailfish, yellowfin tuna, and more.",
+      "For the true fishing connoisseur, here's a chance to catch some of the most sought-after fish in the world. From blue marlin to sailfish, these rich waters have many species available. You'll spend your day docked on a spacious boat with comfortable indoor and outdoor areas. And if you're lucky enough to hook one of these legendary fish, it helps that your guides are well-skilled at catching them as well.",
 
     descriptionSecondary:
-      "Get out on the waters off Punta Cana for a deep sea fishing experience, with all equipment included and guidance from an experienced captain. With the captain's knowledge of the area, you'll have the best possible chances of returning to land with a trophy-size catch. Choose how much or how little instruction you'd like to have; which makes this excursion suitable for both beginners and experienced fishermen",
+      "Deep sea fishing off the coast of Punta Cana is an exciting experience and a great way to spend time with your family. Our fleet of boats can accommodate you, your friends and family so that everyone can catch their own fish! With the captain's knowledge of the area, you will have the best possible chances of returning to land with a trophy-size catch. Choose how much or how little instruction you'd like to have; which makes this excursion suitable for both beginners and experienced fishermen",
   },
   {
     id: 3,
@@ -49,18 +51,21 @@ export const longerTours = [
     link: "/longer/glass",
     description:
       "Get close-up views of tropical fish, coral, and other marine life",
-    mainImg: "https://i.ibb.co/jz1vbfH/scubadoo3.jpg",
+    mainImg: "https://i.ibb.co/RCXDJvQ/glass.webp",
     gallery: [
-      "https://i.ibb.co/sCgb6rL/scubadoo2.jpg",
-      "https://i.ibb.co/jz1vbfH/scubadoo3.jpg",
-      "https://i.ibb.co/ypZX7Zs/scubadoo.jpg",
+      "https://i.ibb.co/12dygMv/glass2-1.webp",
+      "https://i.ibb.co/k1mPqRW/glass3.webp",
+      "https://i.ibb.co/RCXDJvQ/glass.webp",
+      "https://i.ibb.co/x89qdbW/glass-1.webp",
+      "https://i.ibb.co/K0jb9wQ/glass2.webp",
+      "https://i.ibb.co/dBfBC4S/Punta-Cana-Glass-Bottom-Boat-Party-image-1.webp",
     ],
     overview: "1.5 Hours Tour",
     descriptionMain:
-      "Sail along our beautiful coast and visit the underwater aquarium without getting wet, book our glass bottom boat tour and enjoy the nice view of the Punta Cana cost with it green palm tree and turquoise water",
+      "Having a nice glass bottom boat tour in the Caribbean Sea is a must see . It's a real adventure to sail along our beautiful coast and visit different landscapes, passing through the underwater aquarium without getting wet. Book our glass bottom boat tour today and enjoy the nice view of the Punta Cana cost with it green palm tree and turquoise water",
 
     descriptionSecondary:
-      "Get close-up views of tropical fish, coral, and other marine life on this fun, half-day glass-bottomed boat tour. Relax on board as you enjoy the views and take advantage of the provided snacks and drinks. If you don't mind getting wet, don some snorkeling gear and swim at a beautiful natural swimming pool. An ideal trip for the whole family.",
+      "Forget sharks, forget jellyfish and get up close to tropical fish - Get a first hand look at the beauty of the ocean with this half-day glass-bottom boat cruise. Watch colorful tropical fish dart around coral reefs, safely snorkel at a natural swimming pool! This is a great option for everyone to see adventure and learn about their world.",
   },
   {
     id: 4,
@@ -69,11 +74,13 @@ export const longerTours = [
     price: "89 per person",
     link: "/longer/surf",
     description: "Punta Cana Surf Adventure",
-    mainImg: "https://i.ibb.co/jz1vbfH/scubadoo3.jpg",
+    mainImg:
+      "https://i.ibb.co/yFqvsgz/douglas-bagg-u-LJM2fb-h5s-unsplash-1.webp",
     gallery: [
-      "https://i.ibb.co/sCgb6rL/scubadoo2.jpg",
-      "https://i.ibb.co/jz1vbfH/scubadoo3.jpg",
-      "https://i.ibb.co/ypZX7Zs/scubadoo.jpg",
+      "https://i.ibb.co/hMbs4gw/ting-tse-wang-V3mbj-F9-Lh7-A-unsplash.webp",
+      "https://i.ibb.co/yWHnHXt/surfing-croyde-bay-VLCBVPIv-KT8-unsplash.webp",
+      "https://i.ibb.co/yFqvsgz/douglas-bagg-u-LJM2fb-h5s-unsplash-1.webp",
+      "https://i.ibb.co/DK0vHQM/barbara-rezende-d-HKXkt-Pp36-A-unsplash-1.webp",
     ],
     overview: "2.5 Hours Tour",
     descriptionMain:
@@ -81,5 +88,29 @@ export const longerTours = [
 
     descriptionSecondary:
       "Macao Beach has many surf breaks for different level of surfers. We will always find a spot where you feel comfortable, challenged, and above-all safe! Enjoying your surfing experience and being totally stoked after each session is as important as learning the skills themselves! Surfing in a sport that lifts you up, empowers and motivates you! Your stoke is our goal",
+  },
+  {
+    id: 5,
+    name: "Party Boat",
+    pageName: "Party Boat",
+    price: "68 per person",
+    link: "/longer/party",
+    description: "Booze Cruise",
+    mainImg: "https://i.ibb.co/drdKVTc/ezgif-com-gif-maker-2.webp",
+    gallery: [
+      "https://i.ibb.co/XSFjHvd/ezgif-com-gif-maker-1.webp",
+      "https://i.ibb.co/8MQdHL4/ezgif-com-gif-maker-3.webp",
+      "https://i.ibb.co/drdKVTc/ezgif-com-gif-maker-2.webp",
+      "https://i.ibb.co/D5GWg31/ezgif-com-gif-maker.webp",
+      "https://i.ibb.co/jR2Vnkq/ezgif-com-gif-maker-5.webp",
+      "https://i.ibb.co/zbVFFL4/ezgif-com-gif-maker-4.webp",
+      "https://i.ibb.co/PCmhGvS/ezgif-com-gif-maker-7.webp",
+    ],
+    overview: "2 - 3 Hours Tour",
+    descriptionMain:
+      "Whip up fun in the sun on this party ride along Punta Cana’s stunning coastline. Cruise to a coral reef, snorkel among tropical fish, and dance to musical hits over alcoholic drinks on a catamaran. This half-day tour lets you enjoy all of these activities while enjoying the party atmosphere.",
+
+    descriptionSecondary:
+      "Imagine yourself on a magnificent catamaran cruising along the beautiful coastline of Punta Cana, the splendid view of stunning white sand beaches and beautiful tropical vegetation, enjoying a delicious beverage of your choice. Join us today!",
   },
 ]

@@ -1,8 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "./layout"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
-
+import { Listbox } from "@headlessui/react"
 import { FaWhatsapp } from "react-icons/fa"
 import { FiPhoneCall } from "react-icons/fi"
 import { BsChatLeftText } from "react-icons/bs"
@@ -10,15 +10,27 @@ import { BsChatLeftText } from "react-icons/bs"
 import ButtonBlueCTA from "./ExcursionCardComponents/ButtonBlueCTA"
 import ButtonGreenCTA from "./ExcursionCardComponents/ButtonGreenCTA"
 import PayPalButton from "./ExcursionCardComponents/PayPalButtonComponent"
+
+const guestCount = [
+  1,2,3,4,5,6
+]
 const TourLayout = ({ tour }) => {
   const phoneNumber = "18296405433"
+  const [guests, setGuests] = useState(guestCount[0])
+  const [price, setPrice] = useState(tour.price)
+  const calculatePrice = (guests) => {
+    setGuests(guests)
+    const newPrice = tour.price.split(" ")[0] * guests
+    setPrice(newPrice)
+  }
+  console.log(guests)
   return (
     <Layout>
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
         {tour.gallery && (
           <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}>
             {tour.gallery.map((image, index) => (
-              <div className="h-60" key={index}>
+              <div className="h-60 xs:h-72" key={index}>
                 <img src={image} alt={tour.pageName} />
               </div>
             ))}
@@ -48,7 +60,26 @@ const TourLayout = ({ tour }) => {
           {tour.overview && (
             <h4 className="text-sm text-gray-500">{tour.overview}</h4>
           )}
-          <PayPalButton price={tour.price} />
+          {tour.paypal && (
+            <>
+          <Listbox value={guests} onChange={calculatePrice}>
+          
+            <Listbox.Button>Amount of Guests:</Listbox.Button>
+            <Listbox.Label>{guests} - ${price}</Listbox.Label>
+            <Listbox.Options>
+              {guestCount.map(guests => (
+                <Listbox.Option
+                  key={guests}
+                  value={guests}
+                >
+                  {guests}
+                </Listbox.Option>
+              ))}
+            </Listbox.Options>
+          </Listbox>
+          <PayPalButton price={price} />
+          </>
+          )}
         </div>
         <div className="flex flex-col items-center justify-center my-5 mx-4 space-y-2">
           {tour.descriptionSecondary && (

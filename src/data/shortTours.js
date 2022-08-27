@@ -5,6 +5,7 @@ export const shortTours = [
     pageName: "Towables",
     price: "15 per Person",
     link: "/short/towable",
+    paypal: true,
     description: "The Great Big Mable is a classic towable",
     mainImg: "https://i.ibb.co/PCr4nDh/mable.webp",
     gallery: [
@@ -35,6 +36,7 @@ export const shortTours = [
     pageName: "Water Ski / Wake Board",
     price: "35 per Person",
     link: "/short/wake",
+    paypal: true,
     description: "Show off your ability and skill on the water",
     mainImg: "https://i.ibb.co/b3pcF73/wakeboard3.webp",
     gallery: [
@@ -79,7 +81,8 @@ export const shortTours = [
     pageName: "Snorkeling",
     price: "40 per person",
     link: "/short/snorkel",
-    description: "Snorkeling!!!",
+    paypal: true,
+    description: "Are you ready for a journey to the deep blue sea?",
     mainImg: "https://i.ibb.co/5hVmknJ/snorkel7.webp",
     gallery: [
       "https://i.ibb.co/GPvS59q/snorkel6.webp",
@@ -92,8 +95,33 @@ export const shortTours = [
     ],
     overview: "1 Hour Tour",
     descriptionMain:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nostrum iure saepe consequatur nihil excepturi quo molestias nemo a in, fugiat natus minima, esse tempora! Ab at sequi eligendi id saepe velit eius quas quae quia ex, tempora veritatis architecto rerum nihil repudiandae ratione magnam a expedita, eaque, inventore ipsa eos! Cum dolor nam totam laborum pariatur placeat nesciunt veniam ex neque natus iure harum id suscipit nihil sed qui quibusdam, numquam a in veritatis fugit perferendis atque corrupti ipsum. Culpa quisquam nesciunt dolores beatae quasi doloremque nihil voluptate alias velit iusto. Ea illum, quibusdam quam veritatis assumenda saepe ad.",
+      "Meet new friends and explore the ocean like never before. Snorkeling is a spectacular, fun way to see not only marine life but all the ways in which our planet works. Life is abundant and so are the experiences to be had from a snorkeling trip. Get ready to dive into a world of beauty and awe!",
     descriptionSecondary:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In ducimus temporibus velit vero nobis? Excepturi similique hic, facilis obcaecati dolor aperiam nostrum! Sit vero consectetur impedit cum voluptate, maxime blanditiis iure aliquid praesentium voluptates quod, culpa dolores asperiores, veritatis dolore laborum ullam cupiditate voluptatum corporis quam. Quae repellendus ea animi. Deleniti eum nulla blanditiis, quidem recusandae excepturi natus voluptas aperiam a! Libero dolorum unde commodi voluptatibus sunt dolorem exercitationem, error earum itaque rem officia molestias corporis iusto, laboriosam suscipit totam, nesciunt ratione nam eligendi. Nostrum a minus enim perferendis fugiat suscipit at rem aperiam, nulla, sint, consectetur ad ullam ducimus!",
+      "Join us in snorkeling the amazing reefs that line our crystal clear clear blue waters, only a few minutes from your door. We’ll take you to amazing spots where you can swim up to coral heads and so much more. Whether it’s your first time as a snorkeler or you’re an expert. What is the difference between snorkeling and scuba diving? There’s an easy way to find out: do both of them. Join us on a daytrip to see some of the most bio-diverse and beautiful coral reefs in the world.",
+  },
+  {
+    id: 6,
+    name: "Sharks and Stingrays",
+    pageName: "Sharks and Stingrays",
+    price: "60 per person",
+    link: "/short/shark",
+    description:
+      "The unique experience of seeing, touching and holding some of the most feared creatures in the sea is yours.",
+    mainImg: "https://i.ibb.co/9g3PV8Q/ezgif-com-gif-maker-3.webp",
+    gallery: [
+      "https://i.ibb.co/TLNFcvB/ezgif-com-gif-maker-6.webp",
+      "https://i.ibb.co/RS2xyHm/ezgif-com-gif-maker.webp",
+      "https://i.ibb.co/ZmMMPZM/ezgif-com-gif-maker-1.webp",
+      "https://i.ibb.co/9g3PV8Q/ezgif-com-gif-maker-3.webp",
+      "https://i.ibb.co/m0ygdNV/ezgif-com-gif-maker-4.webp",
+      "https://i.ibb.co/QXGnKsd/ezgif-com-gif-maker-7.webp",
+      "https://i.ibb.co/cLnn7yW/ezgif-com-gif-maker-2.webp",
+      "https://i.ibb.co/7kbcnfL/ezgif-com-gif-maker-5.webp",
+    ],
+    overview: "40 minutes",
+    descriptionMain:
+      "Join us on one of our Punta Cana Shark and Stingray tours and discover the marine life in the clear Caribbean waters. Swim with the gentle Punta Cana sharks, or hold a local stingray in your arms! This is the ultimate marine encounter for any family looking for an afternoon of fun.",
+    descriptionSecondary:
+      "This is an experience that the whole family will cherish forever. You will get to snorkel with the gentle sharks and stingrays, swim underwater with these beautiful creatures. So if you are looking for a unique tour in Punta Cana, this is it!",
   },
 ]
