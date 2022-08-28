@@ -15,7 +15,7 @@ module.exports = {
         short_name: `Mariana`,
         start_url: `/`,
         background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        theme_color: `#0c16d9`,
         display: `standalone`,
       },
     },
