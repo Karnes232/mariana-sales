@@ -6,13 +6,12 @@ import ButtonBlueCTA from "../../components/ExcursionCardComponents/ButtonBlueCT
 import { FiPhoneCall } from "react-icons/fi"
 import ButtonGreenCTA from "../../components/ExcursionCardComponents/ButtonGreenCTA"
 import { BsChatLeftText } from "react-icons/bs"
-
+import { phoneNumber } from "../../data/phoneNumber"
 const openwater = () => {
   const opts = {
     height: "100%",
     width: "100%",
   }
-  const phoneNumber = "18295519829"
   return (
     <Layout>
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">

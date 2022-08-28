@@ -15,8 +15,8 @@ import ButtonGreenCTA from "../../components/ExcursionCardComponents/ButtonGreen
 import { FaWhatsapp } from "react-icons/fa"
 import { FiPhoneCall } from "react-icons/fi"
 import { BsChatLeftText } from "react-icons/bs"
+import { phoneNumber } from "../../data/phoneNumber"
 const catalina = () => {
-  const phoneNumber = "18295519829"
   return (
     <Layout>
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">

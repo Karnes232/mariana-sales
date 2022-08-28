@@ -7,13 +7,12 @@ import { BsChatLeftText } from "react-icons/bs"
 import YouTube from "react-youtube"
 import ButtonBlueCTA from "../../components/ExcursionCardComponents/ButtonBlueCTA"
 import ButtonGreenCTA from "../../components/ExcursionCardComponents/ButtonGreenCTA"
-
+import { phoneNumber } from "../../data/phoneNumber"
 const discover = () => {
   const opts = {
     height: "100%",
     width: "100%",
   }
-  const phoneNumber = "18295519829"
   return (
     <Layout>
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
