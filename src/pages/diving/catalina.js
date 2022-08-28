@@ -12,6 +12,8 @@ import catalina5 from "../../images/catalina/seahorse-gda1528204_640.webp"
 import catalina6 from "../../images/catalina/The_Aquarium,_Catalina_Island_.webp"
 
 import { FaWhatsapp } from "react-icons/fa"
+import { FiPhoneCall } from "react-icons/fi"
+import {BsChatLeftText} from "react-icons/bs"
 const catalina = () => {
   const phoneNumber = "18295519829"
   return (

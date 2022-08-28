@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from "../../components/layout"
 import { FaWhatsapp } from "react-icons/fa"
+import { FiPhoneCall } from "react-icons/fi"
+import {BsChatLeftText} from "react-icons/bs"
 
 import YouTube from "react-youtube"
 import ButtonBlueCTA from "../../components/ExcursionCardComponents/ButtonBlueCTA"
