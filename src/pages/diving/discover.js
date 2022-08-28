@@ -1,9 +1,13 @@
 import React from "react"
 import Layout from "../../components/layout"
 import { FaWhatsapp } from "react-icons/fa"
+import { FiPhoneCall } from "react-icons/fi"
+import { BsChatLeftText } from "react-icons/bs"
 
 import YouTube from "react-youtube"
-
+import ButtonBlueCTA from "../../components/ExcursionCardComponents/ButtonBlueCTA"
+import ButtonGreenCTA from "../../components/ExcursionCardComponents/ButtonGreenCTA"
+import { phoneNumber } from "../../data/phoneNumber"
 const discover = () => {
   const opts = {
     height: "100%",
@@ -33,7 +37,7 @@ const discover = () => {
           <h4 className="text-sm text-gray-500">Price: $110 per person</h4>
           <h4 className="text-sm text-gray-500">Duration: 2.5 Hours</h4>
         </div>
-        <div className="flex flex-col items-center justify-center mt-5 mx-4">
+        <div className="flex flex-col items-center justify-center my-5 mx-4">
           <p className="text-sm text-gray-800 text-center">
             This is a half-day PADI program that offers you the experience of
             Scuba diving from 6 to a maximum of 12 meters, although it does not
@@ -42,18 +46,24 @@ const discover = () => {
             is perfect for people who are interested in finding out what it is
             like to breath underwater and experience the underwater world.
           </p>
-          <a
-            href={`https://api.whatsapp.com/send?phone=${process.env.PHONE_NUMBER}`}
-            target="_blank"
-            aria-label="Whatsapp"
-            rel="noreferrer"
-          >
-            <button className="uppercase text-sm font-bold tracking-wide bg-[#25D366] text-gray-100 p-3 rounded-lg w-80 my-6 focus:outline-none focus:shadow-outline">
-              WhatsApp
-              <FaWhatsapp className="inline-block h-4 w-5 ml-1" />
-            </button>
-          </a>
+          
         </div>
+        <ButtonBlueCTA
+            phoneNumber={`tel:+${phoneNumber}`}
+            text="Call Me"
+            icon={<FiPhoneCall className="inline-block h-4 w-5 ml-1" />}
+          />
+          <ButtonGreenCTA
+            phoneNumber={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
+            text="WhatsApp"
+            icon={<FaWhatsapp className="inline-block h-4 w-5 ml-1" />}
+          />
+          <ButtonBlueCTA
+            phoneNumber={`sms::+${phoneNumber}`}
+            text="Text Me"
+            icon={<BsChatLeftText className="inline-block h-4 w-5 ml-1" />}
+          />
+        <div className="my-2"></div>
       </div>
     </Layout>
   )
