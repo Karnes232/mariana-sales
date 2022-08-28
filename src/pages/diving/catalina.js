@@ -14,7 +14,7 @@ import ButtonBlueCTA from "../../components/ExcursionCardComponents/ButtonBlueCT
 import ButtonGreenCTA from "../../components/ExcursionCardComponents/ButtonGreenCTA"
 import { FaWhatsapp } from "react-icons/fa"
 import { FiPhoneCall } from "react-icons/fi"
-import {BsChatLeftText} from "react-icons/bs"
+import { BsChatLeftText } from "react-icons/bs"
 const catalina = () => {
   const phoneNumber = "18295519829"
   return (
@@ -60,7 +60,7 @@ const catalina = () => {
             Included: Lunch, Drinks, Transportation
           </h4>
         </div>
-        <div className="flex flex-col items-center justify-center mt-5 mx-4 space-y-2">
+        <div className="flex flex-col items-center justify-center my-5 mx-4 space-y-2">
           <p className="text-sm text-gray-800 text-center">
             THE WALL: This spectacular drop-off is definitely one of the best
             dive sites in the Dominican Republic. A gentle slope leads towards
@@ -90,7 +90,6 @@ const catalina = () => {
         <ButtonGreenCTA
           phoneNumber={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
           text="WhatsApp"
-
           icon={<FaWhatsapp className="inline-block h-4 w-5 ml-1" />}
         />
         <ButtonBlueCTA
@@ -98,6 +97,7 @@ const catalina = () => {
           text="Text Me"
           icon={<BsChatLeftText className="inline-block h-4 w-5 ml-1" />}
         />
+        <div className="my-2"></div>
       </div>
     </Layout>
   )

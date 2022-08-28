@@ -74,7 +74,8 @@ export const longerTours = [
     price: "89 per person",
     link: "/longer/surf",
     description: "Punta Cana Surf Adventure",
-    mainImg: "https://i.ibb.co/yFqvsgz/douglas-bagg-u-LJM2fb-h5s-unsplash-1.webp",
+    mainImg:
+      "https://i.ibb.co/yFqvsgz/douglas-bagg-u-LJM2fb-h5s-unsplash-1.webp",
     gallery: [
       "https://i.ibb.co/hMbs4gw/ting-tse-wang-V3mbj-F9-Lh7-A-unsplash.webp",
       "https://i.ibb.co/yWHnHXt/surfing-croyde-bay-VLCBVPIv-KT8-unsplash.webp",

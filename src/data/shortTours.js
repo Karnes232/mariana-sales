@@ -102,7 +102,8 @@ export const shortTours = [
     pageName: "Sharks and Stingrays",
     price: "60 per person",
     link: "/short/shark",
-    description: "The unique experience of seeing, touching and holding some of the most feared creatures in the sea is yours.",
+    description:
+      "The unique experience of seeing, touching and holding some of the most feared creatures in the sea is yours.",
     mainImg: "https://i.ibb.co/9g3PV8Q/ezgif-com-gif-maker-3.webp",
     gallery: [
       "https://i.ibb.co/TLNFcvB/ezgif-com-gif-maker-6.webp",

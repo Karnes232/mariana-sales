@@ -2,12 +2,17 @@ import React from "react"
 import Layout from "../../components/layout"
 import YouTube from "react-youtube"
 import { FaWhatsapp } from "react-icons/fa"
+import ButtonBlueCTA from "../../components/ExcursionCardComponents/ButtonBlueCTA"
+import { FiPhoneCall } from "react-icons/fi"
+import ButtonGreenCTA from "../../components/ExcursionCardComponents/ButtonGreenCTA"
+import { BsChatLeftText } from "react-icons/bs"
 
 const openwater = () => {
   const opts = {
     height: "100%",
     width: "100%",
   }
+  const phoneNumber = "18295519829"
   return (
     <Layout>
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
@@ -34,7 +39,7 @@ const openwater = () => {
             Duration: 6 - 2.5 Hours sessions
           </h4>
         </div>
-        <div className="flex flex-col items-center justify-center mt-5 space-y-2 mx-4">
+        <div className="flex flex-col items-center justify-center my-5 space-y-2 mx-4">
           <p className="text-sm text-gray-800 text-center">
             The PADI E-Learning is a new product from PADI that makes the dive
             theory very easy to complete and can be downloaded on any Apple or
@@ -70,17 +75,22 @@ const openwater = () => {
             diving with your instructor and exploring the underwater world.
           </p>
         </div>
-        <a
-          href={`https://api.whatsapp.com/send?phone=${process.env.PHONE_NUMBER}`}
-          target="_blank"
-          aria-label="Whatsapp"
-          rel="noreferrer"
-        >
-          <button className="uppercase text-sm font-bold tracking-wide bg-[#25D366] text-gray-100 p-3 rounded-lg w-80 my-6 focus:outline-none focus:shadow-outline">
-            WhatsApp
-            <FaWhatsapp className="inline-block h-4 w-5 ml-1" />
-          </button>
-        </a>
+        <ButtonBlueCTA
+          phoneNumber={`tel:+${phoneNumber}`}
+          text="Call Me"
+          icon={<FiPhoneCall className="inline-block h-4 w-5 ml-1" />}
+        />
+        <ButtonGreenCTA
+          phoneNumber={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
+          text="WhatsApp"
+          icon={<FaWhatsapp className="inline-block h-4 w-5 ml-1" />}
+        />
+        <ButtonBlueCTA
+          phoneNumber={`sms::+${phoneNumber}`}
+          text="Text Me"
+          icon={<BsChatLeftText className="inline-block h-4 w-5 ml-1" />}
+        />
+        <div className="my-2"></div>
       </div>
     </Layout>
   )

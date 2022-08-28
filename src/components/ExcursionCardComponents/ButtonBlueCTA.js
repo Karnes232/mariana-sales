@@ -1,7 +1,6 @@
 import React from "react"
 
 const ButtonBlueCTA = ({ phoneNumber, text, color, icon }) => {
-    
   return (
     <a
       href={phoneNumber}

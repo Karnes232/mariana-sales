@@ -6,7 +6,7 @@ import { Carousel } from "react-responsive-carousel"
 
 import { FaWhatsapp } from "react-icons/fa"
 import { FiPhoneCall } from "react-icons/fi"
-import {BsChatLeftText} from "react-icons/bs"
+import { BsChatLeftText } from "react-icons/bs"
 
 import ButtonBlueCTA from "./ExcursionCardComponents/ButtonBlueCTA"
 import ButtonGreenCTA from "./ExcursionCardComponents/ButtonGreenCTA"
@@ -65,7 +65,6 @@ const TourLayout = ({ tour }) => {
         <ButtonGreenCTA
           phoneNumber={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
           text="WhatsApp"
-
           icon={<FaWhatsapp className="inline-block h-4 w-5 ml-1" />}
         />
         <ButtonBlueCTA
