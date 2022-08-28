@@ -10,8 +10,9 @@ import {BsChatLeftText} from "react-icons/bs"
 
 import ButtonBlueCTA from "./ExcursionCardComponents/ButtonBlueCTA"
 import ButtonGreenCTA from "./ExcursionCardComponents/ButtonGreenCTA"
+import { phoneNumber } from "../data/phoneNumber"
 const TourLayout = ({ tour }) => {
-  const phoneNumber = "18493561729"
+
   return (
     <Layout>
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
