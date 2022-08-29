@@ -15,7 +15,8 @@ import ButtonGreenCTA from "../../components/ExcursionCardComponents/ButtonGreen
 import { FaWhatsapp } from "react-icons/fa"
 import { FiPhoneCall } from "react-icons/fi"
 import { BsChatLeftText } from "react-icons/bs"
-import { phoneNumber } from "../../data/phoneNumber"
+import { email, phoneNumber } from "../../data/phoneNumber"
+import { MdOutlineEmail } from "react-icons/md"
 const catalina = () => {
   return (
     <Layout>
@@ -82,6 +83,11 @@ const catalina = () => {
             in with the branches of soft coral formations.
           </p>
         </div>
+        <ButtonBlueCTA
+          phoneNumber={`mailto:${email}`}
+          text="Email"
+          icon={<MdOutlineEmail className="inline-block h-4 w-5 ml-1" />}
+        />
         <ButtonBlueCTA
           phoneNumber={`tel:+${phoneNumber}`}
           text="Call Me"

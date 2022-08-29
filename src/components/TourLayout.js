@@ -7,10 +7,12 @@ import { Carousel } from "react-responsive-carousel"
 import { FaWhatsapp } from "react-icons/fa"
 import { FiPhoneCall } from "react-icons/fi"
 import {BsChatLeftText} from "react-icons/bs"
+import { MdOutlineEmail } from 'react-icons/md'
 
 import ButtonBlueCTA from "./ExcursionCardComponents/ButtonBlueCTA"
 import ButtonGreenCTA from "./ExcursionCardComponents/ButtonGreenCTA"
 import { phoneNumber } from "../data/phoneNumber"
+import { email } from "../data/phoneNumber"
 const TourLayout = ({ tour }) => {
 
   return (
@@ -57,7 +59,11 @@ const TourLayout = ({ tour }) => {
             </p>
           )}
         </div>
-
+        <ButtonBlueCTA
+          phoneNumber={`mailto:${email}`}
+          text="Email"
+          icon={<MdOutlineEmail className="inline-block h-4 w-5 ml-1" />}
+        />
         <ButtonBlueCTA
           phoneNumber={`tel:+${phoneNumber}`}
           text="Call Me"
