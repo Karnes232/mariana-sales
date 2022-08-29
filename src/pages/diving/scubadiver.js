@@ -6,7 +6,8 @@ import ButtonBlueCTA from "../../components/ExcursionCardComponents/ButtonBlueCT
 import { FiPhoneCall } from "react-icons/fi"
 import ButtonGreenCTA from "../../components/ExcursionCardComponents/ButtonGreenCTA"
 import { BsChatLeftText } from "react-icons/bs"
-import { phoneNumber } from "../../data/phoneNumber"
+import { email, phoneNumber } from "../../data/phoneNumber"
+import { MdOutlineEmail } from "react-icons/md"
 const scubadiver = () => {
   const opts = {
     height: "100%",
@@ -75,6 +76,11 @@ const scubadiver = () => {
             diving with your instructor and exploring the underwater world.
           </p>
         </div>
+        <ButtonBlueCTA
+          phoneNumber={`mailto:${email}`}
+          text="Email"
+          icon={<MdOutlineEmail className="inline-block h-4 w-5 ml-1" />}
+        />
         <ButtonBlueCTA
           phoneNumber={`tel:+${phoneNumber}`}
           text="Call Me"
