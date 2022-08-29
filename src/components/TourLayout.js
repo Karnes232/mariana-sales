@@ -64,7 +64,7 @@ const TourLayout = ({ tour }) => {
           text="Email"
           icon={<MdOutlineEmail className="inline-block h-4 w-5 ml-1" />}
         />
-        <ButtonBlueCTA
+        {/* <ButtonBlueCTA
           phoneNumber={`tel:+${phoneNumber}`}
           text="Call Me"
           icon={<FiPhoneCall className="inline-block h-4 w-5 ml-1" />}
@@ -79,7 +79,7 @@ const TourLayout = ({ tour }) => {
           phoneNumber={`sms::+${phoneNumber}`}
           text="Text Me"
           icon={<BsChatLeftText className="inline-block h-4 w-5 ml-1" />}
-        />
+        /> */}
         <div className="my-2"></div>
       </div>
     </Layout>
