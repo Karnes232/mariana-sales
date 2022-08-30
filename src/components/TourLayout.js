@@ -10,10 +10,9 @@ import ButtonBlueCTA from "./ExcursionCardComponents/ButtonBlueCTA"
 import ButtonGreenCTA from "./ExcursionCardComponents/ButtonGreenCTA"
 import PayPalComponent from "./ExcursionCardComponents/PayPalComponent"
 
-
 const TourLayout = ({ tour }) => {
   const phoneNumber = "18296405433"
- 
+
   return (
     <Layout>
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
@@ -50,9 +49,7 @@ const TourLayout = ({ tour }) => {
           {tour.overview && (
             <h4 className="text-sm text-gray-500">{tour.overview}</h4>
           )}
-          {tour.paypal && (
-           <PayPalComponent tour={tour} />
-          )}
+          {tour.paypal && <PayPalComponent tour={tour} />}
         </div>
         <div className="flex flex-col items-center justify-center my-5 mx-4 space-y-2">
           {tour.descriptionSecondary && (
