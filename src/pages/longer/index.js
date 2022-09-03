@@ -5,6 +5,7 @@ import ExcursionCard from "../../components/ExcursionCardComponents/ExcursionCar
 import YouTube from "react-youtube"
 
 import { longerTours } from "../../data/longerTours"
+import { Helmet } from "react-helmet"
 
 const index = () => {
   const opts = {
