@@ -8,6 +8,7 @@ import ButtonGreenCTA from "../../components/ExcursionCardComponents/ButtonGreen
 import { BsChatLeftText } from "react-icons/bs"
 import { email, phoneNumber } from "../../data/phoneNumber"
 import { MdOutlineEmail } from "react-icons/md"
+import { Helmet } from "react-helmet"
 const openwater = () => {
   const opts = {
     height: "100%",
@@ -15,6 +16,7 @@ const openwater = () => {
   }
   return (
     <Layout>
+      <Helmet title="Open Water Diver Course" />
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
         <div className="relative w-screen max-w-lg h-56">
           <YouTube videoId="qEzf4MjmowA" opts={opts} className="h-full" />

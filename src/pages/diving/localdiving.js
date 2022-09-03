@@ -18,10 +18,11 @@ import ButtonGreenCTA from "../../components/ExcursionCardComponents/ButtonGreen
 import { BsChatLeftText } from "react-icons/bs"
 import { email, phoneNumber } from "../../data/phoneNumber"
 import { MdOutlineEmail } from "react-icons/md"
+import { Helmet } from "react-helmet"
 const localdiving = () => {
-  
   return (
     <Layout>
+      <Helmet title="Local Diving" />
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
         <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}>
           <div className="h-60">

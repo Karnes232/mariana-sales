@@ -6,17 +6,18 @@ import { Carousel } from "react-responsive-carousel"
 
 import { FaWhatsapp } from "react-icons/fa"
 import { FiPhoneCall } from "react-icons/fi"
-import {BsChatLeftText} from "react-icons/bs"
-import { MdOutlineEmail } from 'react-icons/md'
+import { BsChatLeftText } from "react-icons/bs"
+import { MdOutlineEmail } from "react-icons/md"
 
 import ButtonBlueCTA from "./ExcursionCardComponents/ButtonBlueCTA"
 import ButtonGreenCTA from "./ExcursionCardComponents/ButtonGreenCTA"
 import { phoneNumber } from "../data/phoneNumber"
 import { email } from "../data/phoneNumber"
+import { Helmet } from "react-helmet"
 const TourLayout = ({ tour }) => {
-
   return (
     <Layout>
+      <Helmet title="Quick Tours" />
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
         {tour.gallery && (
           <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}>
