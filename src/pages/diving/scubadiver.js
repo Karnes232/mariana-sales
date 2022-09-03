@@ -8,6 +8,7 @@ import ButtonGreenCTA from "../../components/ExcursionCardComponents/ButtonGreen
 import { BsChatLeftText } from "react-icons/bs"
 import { email, phoneNumber } from "../../data/phoneNumber"
 import { MdOutlineEmail } from "react-icons/md"
+import { Helmet } from "react-helmet"
 const scubadiver = () => {
   const opts = {
     height: "100%",
@@ -15,6 +16,7 @@ const scubadiver = () => {
   }
   return (
     <Layout>
+      <Helmet title="Scuba Diver Course" />
       <div className="w-screen max-w-lg flex flex-col mt-5 items-center">
         <div className="relative w-screen max-w-lg h-56">
           <YouTube videoId="qEzf4MjmowA" opts={opts} className="h-full" />
@@ -40,7 +42,7 @@ const scubadiver = () => {
             Duration: 4 - 2.5 Hours sessions
           </h4>
         </div>
-        <div className="flex flex-col items-center justify-center mt-5 space-y-2 mx-4">
+        <div className="flex flex-col items-center justify-center my-5 space-y-2 mx-4">
           <p className="text-sm text-gray-800 text-center">
             The PADI E-Learning is a new product from PADI that makes the dive
             theory very easy to complete and can be downloaded on any Apple or
