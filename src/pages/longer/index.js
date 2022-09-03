@@ -13,6 +13,7 @@ const index = () => {
   }
   return (
     <Layout>
+    <Helmet title="Longer Tours" />
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
         <div className="relative w-screen max-w-lg h-56">
           <YouTube videoId="zqUQn0QTCGE" opts={opts} className="h-full" />
