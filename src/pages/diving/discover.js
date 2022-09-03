@@ -8,6 +8,7 @@ import YouTube from "react-youtube"
 import ButtonBlueCTA from "../../components/ExcursionCardComponents/ButtonBlueCTA"
 import ButtonGreenCTA from "../../components/ExcursionCardComponents/ButtonGreenCTA"
 import { phoneNumber } from "../../data/phoneNumber"
+import { Helmet } from "react-helmet"
 const discover = () => {
   const opts = {
     height: "100%",
@@ -15,6 +16,7 @@ const discover = () => {
   }
   return (
     <Layout>
+      <Helmet title="Discover Scuba Diving" />
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
         <div className="relative w-screen max-w-lg h-56">
           <YouTube videoId="Ad5iorC7xlo" opts={opts} className="h-full" />
@@ -46,23 +48,22 @@ const discover = () => {
             is perfect for people who are interested in finding out what it is
             like to breath underwater and experience the underwater world.
           </p>
-          
         </div>
         <ButtonBlueCTA
-            phoneNumber={`tel:+${phoneNumber}`}
-            text="Call Me"
-            icon={<FiPhoneCall className="inline-block h-4 w-5 ml-1" />}
-          />
-          <ButtonGreenCTA
-            phoneNumber={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
-            text="WhatsApp"
-            icon={<FaWhatsapp className="inline-block h-4 w-5 ml-1" />}
-          />
-          <ButtonBlueCTA
-            phoneNumber={`sms::+${phoneNumber}`}
-            text="Text Me"
-            icon={<BsChatLeftText className="inline-block h-4 w-5 ml-1" />}
-          />
+          phoneNumber={`tel:+${phoneNumber}`}
+          text="Call Me"
+          icon={<FiPhoneCall className="inline-block h-4 w-5 ml-1" />}
+        />
+        <ButtonGreenCTA
+          phoneNumber={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
+          text="WhatsApp"
+          icon={<FaWhatsapp className="inline-block h-4 w-5 ml-1" />}
+        />
+        <ButtonBlueCTA
+          phoneNumber={`sms::+${phoneNumber}`}
+          text="Text Me"
+          icon={<BsChatLeftText className="inline-block h-4 w-5 ml-1" />}
+        />
         <div className="my-2"></div>
       </div>
     </Layout>

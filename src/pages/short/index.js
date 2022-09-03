@@ -5,6 +5,7 @@ import ExcursionCard from "../../components/ExcursionCardComponents/ExcursionCar
 import YouTube from "react-youtube"
 
 import { shortTours } from "../../data/shortTours"
+import { Helmet } from "react-helmet"
 
 const index = () => {
   const opts = {
@@ -14,6 +15,7 @@ const index = () => {
 
   return (
     <Layout>
+      <Helmet title="Quick Tours" />
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
         <div className="relative w-screen max-w-lg h-56">
           <YouTube videoId="zqUQn0QTCGE" opts={opts} className="h-full" />

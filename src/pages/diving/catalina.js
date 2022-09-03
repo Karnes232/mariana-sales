@@ -16,9 +16,11 @@ import { FaWhatsapp } from "react-icons/fa"
 import { FiPhoneCall } from "react-icons/fi"
 import { BsChatLeftText } from "react-icons/bs"
 import { phoneNumber } from "../../data/phoneNumber"
+import { Helmet } from "react-helmet"
 const catalina = () => {
   return (
     <Layout>
+      <Helmet title="Catalina Diving" />
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
         <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}>
           <div className="h-60">
