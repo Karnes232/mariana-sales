@@ -1,8 +1,8 @@
 import React from "react"
-
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 const ButtonGreenCTA = ({ phoneNumber, text, color, icon }) => {
   return (
-    <a
+    <OutboundLink
       href={phoneNumber}
       target="_blank"
       aria-label="Contact Me"
@@ -14,7 +14,7 @@ const ButtonGreenCTA = ({ phoneNumber, text, color, icon }) => {
         {text}
         {icon}
       </button>
-    </a>
+    </OutboundLink>
   )
 }
 
