@@ -19,6 +19,8 @@
     "@headlessui/react": "^1.6.6",
     "@heroicons/react": "^1.0.6",
     "gatsby": "^4.20.0",
+    "gatsby-plugin-google-analytics": "^4.22.0",
+    "gatsby-plugin-google-gtag": "^4.22.0",
     "gatsby-plugin-image": "^2.20.0",
     "gatsby-plugin-manifest": "^4.20.0",
     "gatsby-plugin-offline": "^5.20.0",
