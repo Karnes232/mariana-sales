@@ -1,10 +1,12 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
 const IndexPage = () => {
   return (
     <Layout>
+      <Helmet title="Mariana Caribbean Sports" />
       <div className="bg-image w-screen max-w-lg ">
         <Link to="/diving">
           <button className="bg-image__button top-[calc(50%-120px)] inline-block rounded-md text-center w-48 font-bold text-lg py-4 px-4 mb-20 text-white bg-sky-500 opacity-75 hover:opacity-100 hover:bg-blue-600">

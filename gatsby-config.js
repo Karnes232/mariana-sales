@@ -34,7 +34,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId:  "G-QHCGQQ56Q6",
+        trackingId: "G-QHCGQQ56Q6",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: true,
         // Setting this parameter is optional
@@ -66,9 +66,9 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
- // Google Analytics / GA
+          // Google Analytics / GA
           "G-QHCGQQ56Q6", // Google Ads / Adwords / AW
-// Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+          // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
