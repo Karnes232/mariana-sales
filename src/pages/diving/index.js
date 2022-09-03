@@ -8,6 +8,7 @@ import sdCardImage from "../../images/diving/sdCard.webp"
 import owdCardImage from "../../images/diving/owdCard.webp"
 import ExcursionCard from "../../components/ExcursionCardComponents/ExcursionCard"
 import YouTube from "react-youtube"
+import { Helmet } from "react-helmet"
 const index = () => {
   const opts = {
     height: "100%",
@@ -15,6 +16,7 @@ const index = () => {
   }
   return (
     <Layout>
+      <Helmet title="Diving" />
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
         <div className="relative w-screen max-w-lg h-56">
           <YouTube videoId="KvZT3etZIsw" opts={opts} className="h-full" />
