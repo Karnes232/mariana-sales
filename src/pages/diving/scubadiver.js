@@ -8,6 +8,7 @@ import ButtonGreenCTA from "../../components/ExcursionCardComponents/ButtonGreen
 import { BsChatLeftText } from "react-icons/bs"
 import { email, phoneNumber } from "../../data/phoneNumber"
 import { MdOutlineEmail } from "react-icons/md"
+import { Helmet } from "react-helmet"
 const scubadiver = () => {
   const opts = {
     height: "100%",
