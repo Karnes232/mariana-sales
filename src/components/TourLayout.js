@@ -17,7 +17,7 @@ import { Helmet } from "react-helmet"
 const TourLayout = ({ tour }) => {
   return (
     <Layout>
-      <Helmet title="Quick Tours" />
+      <Helmet title={tour.pageName} />
       <div className="w-screen max-w-lg flex flex-col my-5 items-center">
         {tour.gallery && (
           <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}>
