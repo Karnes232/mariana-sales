@@ -68,6 +68,7 @@ module.exports = {
         trackingIds: [
           // Google Analytics / GA
           "G-JTD9MRR4NP",
+          "GTM-KHVH74Q",
           // Google Ads / Adwords / AW
           // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
@@ -87,6 +88,19 @@ module.exports = {
           // Avoids sending pageview hits from custom paths
           exclude: ["/preview/**", "/do-not-track/me/too/"],
         },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-KHVH74Q",
+  
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: "gatsby" },
+  
+
+        enableWebVitalsTracking: true,
+       
       },
     },
   ],

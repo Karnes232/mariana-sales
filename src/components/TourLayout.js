@@ -64,21 +64,25 @@ const TourLayout = ({ tour }) => {
           phoneNumber={`mailto:${email}`}
           text="Email"
           icon={<MdOutlineEmail className="inline-block h-4 w-5 ml-1" />}
+          id='email'
         />
         <ButtonBlueCTA
           phoneNumber={`tel:+${phoneNumber}`}
           text="Call Me"
           icon={<FiPhoneCall className="inline-block h-4 w-5 ml-1" />}
+          id='call'
         />
         <ButtonGreenCTA
           phoneNumber={`https://api.whatsapp.com/send?phone=${phoneNumber}`}
           text="WhatsApp"
           icon={<FaWhatsapp className="inline-block h-4 w-5 ml-1" />}
+          id='whatsapp'
         />
         <ButtonBlueCTA
           phoneNumber={`sms::+${phoneNumber}`}
           text="Text Me"
           icon={<BsChatLeftText className="inline-block h-4 w-5 ml-1" />}
+          id='sms'
         />
         <div className="my-2"></div>
       </div>
