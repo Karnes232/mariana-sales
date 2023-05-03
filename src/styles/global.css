@@ -16,6 +16,18 @@
   background-repeat: no-repeat;
 }
 
+.bg-image-tacano {
+  top: 3.5rem;
+  left: 0;
+  height: calc(100% - 56px);
+  width: 100%;
+  z-index: -4;
+  opacity: 0.8;
+  overflow: hidden;
+  background-image: url("../images/tacano.jpg");
+  background-size: contain;
+}
+
 .bg-image__content {
   top: 3.5rem;
   left: 0;
