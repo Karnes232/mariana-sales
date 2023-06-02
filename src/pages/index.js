@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 
 const IndexPage = () => {
-  const [paid, setPaid] = useState(false)
+  const [paid, setPaid] = useState(true)
   return (
     <Layout>
       <Helmet title="Mariana Caribbean Sports" />
