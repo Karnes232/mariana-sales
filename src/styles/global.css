@@ -19,7 +19,6 @@
 .bg-image-tacano {
   top: 3.5rem;
   left: 0;
-  height: calc(100% - 56px);
   width: 100%;
   z-index: -4;
   opacity: 0.8;

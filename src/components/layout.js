@@ -11,15 +11,22 @@ import PropTypes from "prop-types"
 import Header from "./HeaderComponents/Header"
 
 const Layout = ({ children }) => {
+  const [paid, setPaid] = React.useState(false)
   return (
-    <main className="flex flex-col justify-center items-center bg-slate-200">
-      <section className="w-screen max-w-lg bg-white">
-        <Header />
-        <div>
-          <main className="max-w-lg h-screen bg-white">{children}</main>
-        </div>
-      </section>
-    </main>
+    <>
+      {paid ? (
+        <main className="flex flex-col justify-center items-center bg-slate-200">
+          <section className="w-screen max-w-lg bg-white">
+            <Header />
+            <div>
+              <main className="max-w-lg h-screen bg-white">{children}</main>
+            </div>
+          </section>
+        </main>
+      ) : (
+        <div className="bg-image-tacano h-screen w-screen max-w-lg "></div>
+      )}
+    </>
   )
 }
 
